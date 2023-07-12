@@ -11,8 +11,10 @@ let image_url = document.getElementById('img-url');
 let author_name = document.getElementById('author-name');
 let story = document.getElementById('story');
 
-function updatePreview() {
-    container.style.display = "block";
+function updatePreview(event) {
+    event.preventDefault(); // Prevent form submission
+
+    container.style.display = "flex"; 
 
     title_heading.textContent = title.value;
     image.src = image_url.value;
