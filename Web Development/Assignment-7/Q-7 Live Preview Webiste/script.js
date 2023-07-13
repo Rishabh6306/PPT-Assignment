@@ -12,7 +12,7 @@ let author_name = document.getElementById('author-name');
 let story = document.getElementById('story');
 
 function updatePreview(event) {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault(); /// Prevent form submission
 
     container.style.display = "flex"; 
 
