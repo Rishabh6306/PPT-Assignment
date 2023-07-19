@@ -11,28 +11,27 @@ Then 4 is the first bad version.
  */
 
 function isBadVersion(version) {
-    return version >= 4; // Assuming version 4 is the first bad version in this example.
-  }
-  
-  function findFirstBadVersion(n) {
-    let left = 1;
-    let right = n;
-  
-    while (left < right) {
-      const mid = Math.floor((left + right) / 2);
-  
-      if (isBadVersion(mid)) {
-        right = mid; // The first bad version is on the left side.
-      } else {
-        left = mid + 1; // The first bad version is on the right side.
-      }
+  return version >= 4; // Assuming version 4 is the first bad version in this example.
+}
+
+function findFirstBadVersion(n) {
+  let left = 1;
+  let right = n;
+
+  while (left < right) {
+    const mid = Math.floor((left + right) / 2);
+
+    if (isBadVersion(mid)) {
+      right = mid; // The first bad version is on the left side.
+    } else {
+      left = mid + 1; // The first bad version is on the right side.
     }
-  
-    return left; // left (or right) will point to the first bad version.
   }
-  
-  // Example usage:
-  const n = 5;
-  const firstBadVersion = findFirstBadVersion(n);
-  console.log(firstBadVersion); // Output: 4
-  
+
+  return left; // left (or right) will point to the first bad version.
+}
+
+// Example usage:
+const n = 5;
+const firstBadVersion = findFirstBadVersion(n);
+console.log(firstBadVersion); // Output: 4

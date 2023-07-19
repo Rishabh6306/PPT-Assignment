@@ -7,28 +7,27 @@ Output: [1,2]
 Explanation: The sum of 2 and 7 is 9. Therefore, index1 = 1, index2 = 2. We return [1, 2]. */
 
 function twoSum(numbers, target) {
-    let left = 0;
-    let right = numbers.length - 1;
-  
-    while (left < right) {
-      const currentSum = numbers[left] + numbers[right];
-  
-      if (currentSum === target) {
-        return [left + 1, right + 1]; // Adding 1 to convert from 0-indexed to 1-indexed
-      } else if (currentSum < target) {
-        left++;
-      } else {
-        right--;
-      }
+  let left = 0;
+  let right = numbers.length - 1;
+
+  while (left < right) {
+    const currentSum = numbers[left] + numbers[right];
+
+    if (currentSum === target) {
+      return [left + 1, right + 1]; // Adding 1 to convert from 0-indexed to 1-indexed
+    } else if (currentSum < target) {
+      left++;
+    } else {
+      right--;
     }
-  
-    // If the loop ends without finding a solution, there is no valid pair that sums up to the target
-    return [];
   }
-  
-  // Example usage:
-  const numbers = [2, 7, 11, 15];
-  const target = 9;
-  const result = twoSum(numbers, target);
-  console.log(result); // Output: [1, 2]
-  
+
+  // If the loop ends without finding a solution, there is no valid pair that sums up to the target
+  return [];
+}
+
+// Example usage:
+const numbers = [2, 7, 11, 15];
+const target = 9;
+const result = twoSum(numbers, target);
+console.log(result); // Output: [1, 2]

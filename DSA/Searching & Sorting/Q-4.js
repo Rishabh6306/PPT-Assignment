@@ -7,33 +7,32 @@ Input: nums = [1,3,5,6], target = 7
 Output: 4 */
 
 function searchInsert(nums, target) {
-    let left = 0;
-    let right = nums.length - 1;
-  
-    while (left <= right) {
-      const mid = Math.floor((left + right) / 2);
-  
-      if (nums[mid] === target) {
-        return mid;
-      } else if (nums[mid] < target) {
-        left = mid + 1;
-      } else {
-        right = mid - 1;
-      }
+  let left = 0;
+  let right = nums.length - 1;
+
+  while (left <= right) {
+    const mid = Math.floor((left + right) / 2);
+
+    if (nums[mid] === target) {
+      return mid;
+    } else if (nums[mid] < target) {
+      left = mid + 1;
+    } else {
+      right = mid - 1;
     }
-  
-    // If the loop ends without finding the target, left points to the index where the target would be inserted
-    return left;
   }
-  
-  // Example usage:
-  const nums = [1, 3, 5, 6];
-  const target1 = 5;
-  const target2 = 7;
-  
-  const index1 = searchInsert(nums, target1);
-  const index2 = searchInsert(nums, target2);
-  
-  console.log(index1); // Output: 2
-  console.log(index2); // Output: 4
-  
+
+  // If the loop ends without finding the target, left points to the index where the target would be inserted
+  return left;
+}
+
+// Example usage:
+const nums = [1, 3, 5, 6];
+const target1 = 5;
+const target2 = 7;
+
+const index1 = searchInsert(nums, target1);
+const index2 = searchInsert(nums, target2);
+
+console.log(index1); // Output: 2
+console.log(index2); // Output: 4
