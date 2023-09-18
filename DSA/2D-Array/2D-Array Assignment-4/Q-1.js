@@ -31,4 +31,6 @@ let i = 0 , j = 0 , k = 0;
     }
     return result;
 }
+
+
 console.log(occurenceInArray(arr1, arr2, arr3));
