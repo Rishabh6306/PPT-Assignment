@@ -43,4 +43,5 @@ function distinctInteger(arr1, arr2) {
   return [result1, result2];
 }
 
+
 console.log(distinctInteger(nums1, nums2));
