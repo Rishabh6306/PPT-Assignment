@@ -30,4 +30,5 @@ function transposeMatrix(matrix) {
     return transposedMatrix;
 }
 
+
 console.log(transposeMatrix(matrix));  
