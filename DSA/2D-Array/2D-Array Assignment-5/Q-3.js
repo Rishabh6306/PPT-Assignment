@@ -23,7 +23,6 @@ function sortedSquares(nums) {
     }
   
     result.sort((a, b) => a - b);
-  
     return result;
   }
 
