@@ -13,8 +13,6 @@ console.log(name); // Output: Rishabh
 console.log(age); // Output: 18
 console.log(city); // Output: Ayodhya
 
-
-
 Destructuring Arrays:
 To destructure an array, you use square brackets [] and provide variable names to extract the corresponding array elements.
 const colors = ['red', 'green', 'blue'];
