@@ -9,4 +9,4 @@ app.get('/random', (req, res) => {
 let port = 5000;
 app.listen(port, () => {
   console.log(`Server is running on port http://localhost:${port}`);
-});
+}); 
