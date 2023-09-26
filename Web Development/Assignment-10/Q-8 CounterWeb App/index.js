@@ -6,7 +6,7 @@ let counter = 0;
 app.get('/', (req, res) => {
   res.json({ counter });
 });
-
+ 
 app.get('/increment', (req, res) => {
   counter++;
   res.json({ counter });
