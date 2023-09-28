@@ -5,7 +5,7 @@ You must write an algorithm that runs in O(log n) time.
 Input: nums = [1,2,3,1]
 Output: 2
 Explanation: 3 is a peak element and your function should return the index number 2. */
-
+ 
 function findPeakElement(nums) {
   let left = 0;
   let right = nums.length - 1;
