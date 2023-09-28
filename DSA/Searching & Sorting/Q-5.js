@@ -6,7 +6,7 @@ Explanation: The frequency of 4 is 5 which is greater than half of the size of t
 function findMajorityElement(nums) {
   let candidate = null;
   let count = 0;
-
+ 
   for (let num of nums) {
     if (count === 0) {
       candidate = num;
