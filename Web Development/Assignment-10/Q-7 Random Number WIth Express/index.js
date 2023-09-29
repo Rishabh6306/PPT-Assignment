@@ -4,7 +4,7 @@ const app = express();
 app.get('/random', (req, res) => {
   const randomNumber = Math.floor(Math.random() * 100) + 1;
   res.json({ random: randomNumber });
-});
+}); 
 
 let port = 5000;
 app.listen(port, () => {
